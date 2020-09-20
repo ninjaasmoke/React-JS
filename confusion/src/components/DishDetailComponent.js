@@ -3,7 +3,6 @@ import { Card, CardImg, CardTitle, CardText, CardBody } from "reactstrap";
 
 // class DishDetail extends React.Component {
 
-
 function RenderDish({ dish }) {
     if (dish !== null) {
         return (
@@ -26,7 +25,7 @@ function RenderDish({ dish }) {
 function RenderComments({ comments }) {
     return comments.map((comment) => {
         return (
-            <div key="comment.id">
+            <div key={comment.id}>
                 <CardBody>
                     <CardText>{comment.comment}</CardText>
                     <CardText>-{comment.author},

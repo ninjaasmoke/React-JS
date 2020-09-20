@@ -1,12 +1,12 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardTitle, CardText, CardBody } from "reactstrap";
+import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
 
-function RenderMenuComponent({ dish, onClick }) {
+function RenderMenuComponent({ dish, onClick }) { // functional component
     return (
         <Card onClick={() => onClick(dish.id)}>
             <CardImg width="100%" src={dish.image} alt={dish.name}></CardImg>
             <CardImgOverlay>
-                <CardTitle>{dish.name}</CardTitle>
+                <CardTitle><h4>{dish.name}</h4></CardTitle>
             </CardImgOverlay>
         </Card>
     );
