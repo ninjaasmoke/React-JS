@@ -17,7 +17,6 @@ class Main extends React.Component {
         this.setState({ selectedDish: dishId });
     }
 
-
     render() {
         return (
             <div>
@@ -30,7 +29,7 @@ class Main extends React.Component {
                     onClick={(dishId) => this.onDishSelect(dishId)} />
                 <DishDetail
                     dishComponent={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
-                {/* filter is same as for each */}
+                {/* filter is similar to `for each` */}
             </div >
         );
     }
