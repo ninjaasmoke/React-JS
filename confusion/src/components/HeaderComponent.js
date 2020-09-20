@@ -28,22 +28,22 @@ class Header extends React.Component {
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
-                                <NavItem>
+                                <NavItem onClick={this.state.isNavOpen}>
                                     <NavLink className="nav-link" to="/home">
                                         <span className="fa fa-home fa-lg"></span> Home
                                 </NavLink>
                                 </NavItem>
-                                <NavItem>
+                                <NavItem onClick={this.state.isNavOpen}>
                                     <NavLink className="nav-link" to="/aboutus">
                                         <span className="fa fa-info fa-lg"></span> About Us
-                                </NavLink>
-                                </NavItem>
-                                <NavItem>
+                                </NavLink >
+                                </NavItem >
+                                <NavItem onClick={this.state.isNavOpen}>
                                     <NavLink className="nav-link" to="/menu">
                                         <span className="fa fa-list fa-lg"></span> Menu
                                 </NavLink>
                                 </NavItem>
-                                <NavItem>
+                                <NavItem onClick={this.state.isNavOpen}>
                                     <NavLink className="nav-link" to="/contactus">
                                         <span className="fa fa-address-card fa-lg"></span> Contact Us
                                 </NavLink>
