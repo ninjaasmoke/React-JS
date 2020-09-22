@@ -1,20 +1,37 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Collapse, Jumbotron, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem } from "reactstrap";
+import { Collapse, Jumbotron, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, Button, Modal, ModalHeader, ModalBody, FormGroup, Label, Input, Form } from "reactstrap";
 
 class Header extends React.Component {
     constructor(props) {
         super();
         this.state = {
-            isNavOpen: false
+            isNavOpen: false,
+            isModalOpen: false
         };
         this.toggleNav = this.toggleNav.bind(this);
+        this.toggleModal = this.toggleModal.bind(this);
+        this.handleLogin = this.handleLogin.bind(this);
     }
 
     toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen // why not !isNavOpen
         });
+    }
+
+    toggleModal() {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        });
+    }
+
+    handleLogin(event) {
+        this.toggleModal();
+        alert("Username: " + this.username.value +
+            " Password: " + this.password.value +
+            " Remember Me: " + this.remember.checked);
+        event.preventDefault();
     }
 
     render() {
@@ -49,6 +66,13 @@ class Header extends React.Component {
                                 </NavLink>
                                 </NavItem>
                             </Nav>
+                            <Nav className="ml-auto" navbar>
+                                <NavItem>
+                                    <Button outline onClick={this.toggleModal}>
+                                        <span className="fa fa-sign-in fa-lg"></span> Login
+                                    </Button>
+                                </NavItem>
+                            </Nav>
                         </Collapse>
                     </div>
                 </Navbar>
@@ -66,7 +90,32 @@ class Header extends React.Component {
                         </div>
                     </div>
                 </Jumbotron>
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
+                    <ModalBody>
+                        <Form onSubmit={this.handleLogin}>
+                            <FormGroup>
+                                <Label htmlFor="username">Username</Label>
+                                <Input type="text" id="username" name="username"
+                                    innerRef={(input) => this.username = input}></Input>
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="password">Password</Label>
+                                <Input type="password" id="password" name="password"
+                                    innerRef={(input) => this.password = input}></Input>
+                            </FormGroup>
+                            <FormGroup check>
+                                <Label check>
+                                    <Input type="checkbox" name="remember"
+                                        innerRef={(input) => this.remember = input}></Input>{" "} Remember me
+                                </Label>
+                            </FormGroup>
+                            <Button type="submit" value="submit" className="primary">Login</Button>
+                        </Form>
+                    </ModalBody>
+                </Modal>
             </>
+            // </> can also be called </React.Fragment>
         );
     }
 }
