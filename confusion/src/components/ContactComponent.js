@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, FormFeedback, Row } from "reactstrap";
+import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row } from "reactstrap";
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
 // checking for errors
@@ -177,7 +177,7 @@ class Contact extends Component {
                                     </Control.select>
                                 </Col>
                             </Row>
-                            <Row className="form-group">
+                            <Row className="form-group" >
                                 <Label htmlFor="feedback" md={2}>Your Feedback</Label>
                                 <Col>
                                     <Control.textarea model=".message" id="message" name="message"
