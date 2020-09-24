@@ -43,12 +43,13 @@ class CommmentForm extends Component {
                                 <Label htmlFor="rating"><h5>Rating</h5></Label>
                                 <Control.select model=".rating"
                                     className="form-control"
+                                    defaultValue="5"
                                     name="rating">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
                                     <option>5</option>
+                                    <option>4</option>
+                                    <option>3</option>
+                                    <option>2</option>
+                                    <option>1</option>
                                 </Control.select>
                                 <br></br>
 
