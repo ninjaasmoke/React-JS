@@ -132,34 +132,31 @@ function RenderComments({ comments }) {
     );
 }
 
-export default class DishDetail extends Component {
-    constructor(props) {
-        super();
-    }
-    render() {
-        if (this.props.dishComponent === null || this.props.dishComponent === undefined)
-            return (
-                <div></div>
-            );
-        else {
-            return (
-                <div className="container">
-                    <div className="row">
-                        <Breadcrumb>
-                            <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
-                            <BreadcrumbItem active>{this.props.dishComponent.name}</BreadcrumbItem>
-                        </Breadcrumb>
-                        <div className="col-12">
-                            <h3>{this.props.dishComponent.name}</h3>
-                        </div>
-                    </div>
-                    <h1>Selected Dish</h1>
-                    <div className="row">
-                        <RenderDish dish={this.props.dishComponent}></RenderDish>
-                        <RenderComments comments={this.props.comments}></RenderComments>
+const DishDetail = (props) => {
+    if (props.dishComponent === null || props.dishComponent === undefined)
+        return (
+            <div></div>
+        );
+    else {
+        return (
+            <div className="container">
+                <div className="row">
+                    <Breadcrumb>
+                        <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>{props.dishComponent.name}</BreadcrumbItem>
+                    </Breadcrumb>
+                    <div className="col-12">
+                        <h3>{props.dishComponent.name}</h3>
                     </div>
                 </div>
-            );
-        }
+                <h1>Selected Dish</h1>
+                <div className="row">
+                    <RenderDish dish={props.dishComponent}></RenderDish>
+                    <RenderComments comments={props.comments}></RenderComments>
+                </div>
+            </div>
+        );
     }
 }
+
+export default DishDetail;
