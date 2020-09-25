@@ -150,7 +150,6 @@ const DishDetail = (props) => {
                         <h3>{props.dishComponent.name}</h3>
                     </div>
                 </div>
-                <h1>Selected Dish</h1>
                 <div className="row">
                     <RenderDish dish={props.dishComponent}></RenderDish>
                     <RenderComments comments={props.comments}></RenderComments>
