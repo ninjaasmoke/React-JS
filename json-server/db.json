@@ -209,6 +209,14 @@
       "comment": "s.kjfnkjsn",
       "date": "2020-09-26T13:34:32.298Z",
       "id": 20
+    },
+    {
+      "dishId": 0,
+      "rating": "3",
+      "author": "kjandjnk",
+      "comment": ",ajdbkjandkj",
+      "date": "2020-09-27T09:57:02.697Z",
+      "id": 21
     }
   ],
   "promotions": [
@@ -271,6 +279,103 @@
       "message": "afadsfds",
       "date": "2017-12-04T09:41:49.890Z",
       "id": 1
+    },
+    {
+      "firstname": "Nithin Sai",
+      "lastname": "Jad",
+      "telnum": "7892536762",
+      "email": "nithins674@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "Hellow",
+      "id": 2
+    },
+    {
+      "firstname": "Nithin Sai",
+      "lastname": "Jad",
+      "telnum": "7892536762",
+      "email": "nithins674@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "Awesome",
+      "id": 3
+    },
+    {
+      "firstname": "Nithin",
+      "lastname": "Jad",
+      "telnum": "7892536762",
+      "email": "nithins674@gmail.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "kjSNDJNKnk",
+      "date": "2020-09-27T09:55:37.152Z",
+      "id": 4
+    },
+    {
+      "firstname": "Nithin",
+      "lastname": "Jad",
+      "telnum": "7892536762",
+      "email": "nithins674@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "Message",
+      "date": "2020-09-27T09:59:22.587Z",
+      "id": 5
+    },
+    {
+      "firstname": "Nithin",
+      "lastname": "Jad",
+      "telnum": "7892536762",
+      "email": "nithins674@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "Tes",
+      "date": "2020-09-27T10:01:06.305Z",
+      "id": 6
+    },
+    {
+      "firstname": "Nithin",
+      "lastname": "Jad",
+      "telnum": "7892536762",
+      "email": "nithins674@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "again and again",
+      "date": "2020-09-27T10:02:33.893Z",
+      "id": 7
+    },
+    {
+      "firstname": "Nithin Sai",
+      "lastname": "K J",
+      "telnum": "7892536762",
+      "email": "nithins674@gmail.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "Yes",
+      "date": "2020-09-27T10:03:02.329Z",
+      "id": 8
+    },
+    {
+      "firstname": "Nithin Sai",
+      "lastname": "K J",
+      "telnum": "7892536762",
+      "email": "nithins674@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "No 9",
+      "date": "2020-09-27T10:03:57.881Z",
+      "id": 9
+    },
+    {
+      "firstname": "Nithin Sai",
+      "lastname": "K J",
+      "telnum": "7892536762",
+      "email": "nithins674@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "no 10",
+      "date": "2020-09-27T10:04:33.920Z",
+      "id": 10
     }
   ]
 }
