@@ -80,7 +80,7 @@ class Main extends React.Component {
             <div>
                 <Header />
                 <TransitionGroup>
-                    <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+                    <CSSTransition key={this.props.location.key} classNames="page" timeout={400}>
                         <Switch>
                             <Route path="/home" component={HomePage} />
                             <Route exact path="/menu" component={() => <Menu dishes={this.props.dishes} />} />
